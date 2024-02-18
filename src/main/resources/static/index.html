@@ -7,6 +7,70 @@
 </head>
 
 <body>
+<h1>Bestilling av kinobiletter</h1>
+<!-- Skjema for bestilling -->
+<form id="billettForm">
+    <table>
+        <!-- Filmnavn -->
+        <tr>
+            <td><label for="filmNavn">Filmnavn:</label></td>
+            <td>
+                <select id="filmNavn">
+                    <option value="" selected disabled>Velg film her</option>
+                    <option>Film1</option>
+                    <option>Film2</option>
+                    <option>Film3</option>
+                </select>
+                <span id="filmNavnError" class="error-message"></span>
+            </td>
+        </tr>
+        <!-- Antall billetter -->
+        <tr>
+            <td><label for="antallBilletter">Antall billetter:</label></td>
+            <td>
+                <input type="number" id="antallBilletter" min="1" max="9">
+                <span id="antallBilletterError" class="error-message"></span>
+            </td>
+        </tr>
+        <!-- Fornavn -->
+        <tr>
+            <td><label for="kundeNavn">Fornavn:</label></td>
+            <td>
+                <input type="text" id="kundeNavn">
+                <span id="kundeNavnError" class="error-message"></span>
+            </td>
+        </tr>
+        <!-- Etternavn -->
+        <tr>
+            <td><label for="kundeEtternavn">Etternavn:</label></td>
+            <td>
+                <input type="text" id="kundeEtternavn">
+                <span id="kundeEtternavnError" class="error-message"></span>
+            </td>
+        </tr>
+        <!-- Telefonnummer -->
+        <tr>
+            <td><label for="kundeNummer">Telefonnummer:</label></td>
+            <td>
+                <input type="text" id="kundeNummer">
+                <span id="kundeNummerError" class="error-message"></span>
+            </td>
+        </tr>
+        <!-- E-postadresse -->
+        <tr>
+            <td><label for="kundeEmail">E-postadresse:</label></td>
+            <td>
+                <input type="text" id="kundeEmail">
+                <span id="kundeEmailError" class="error-message"></span>
+            </td>
+        </tr>
+    </table>
+    <!-- Knapp for å sende inn skjemaet -->
+    <button type="submit">Kjøp billett</button>
+</form>
+
+
+
 
 <script src="index.js"></script>
 
